@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Puzzle 1</h2>
+        <p>Solve the riddle: "I have cities but no houses, forests but no trees, and rivers but no water. What am I?"</p>
+        <input type="text" id="answer" placeholder="Your answer">
+        <button onclick="checkAnswer('Map', 'part1')">Submit</button>
+        <p id="feedback"></p>
+        <button class="hint-button" onclick="showHint('hint1')">Hint</button>
+        <p id="hint1" class="hint">It's something you use for directions.</p>
+        <a id="nextPuzzle" href="story.html#part1" class="button" style="display:none;">Next</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

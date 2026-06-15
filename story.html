@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>The Mystery Unfolds</h2>
+        <div id="part1" style="display:none;">
+            <p>Part 1 of the story revealed after solving Puzzle 1:</p>
+            <p>"In a spooky old house, whispers of a hidden treasure circulated among the shadows. Legend has it that this treasure was no ordinary find, but something that would make anyone laugh uncontrollably."</p>
+            <a href="puzzle2.html" class="button">Continue to Puzzle 2</a>
+        </div>
+        <div id="part2" style="display:none;">
+            <p>Part 2 of the story revealed after solving Puzzle 2:</p>
+            <p>"With the first clue solved, you find a map leading to the house's basement. It's dark and creepy down there, but you muster your courage to proceed. What could possibly go wrong?"</p>
+            <a href="puzzle3.html" class="button">Continue to Puzzle 3</a>
+        </div>
+        <div id="part3" style="display:none;">
+            <p>Part 3 of the story revealed after solving Puzzle 3:</p>
+            <p>"In the basement, you find a series of comically exaggerated traps, like rubber chickens and fake spiders. Clearly, someone with a sense of humor set this up. But the biggest laugh is yet to come."</p>
+            <a href="puzzle4.html" class="button">Continue to Puzzle 4</a>
+        </div>
+        <div id="part4" style="display:none;">
+            <p>Part 4 of the story revealed after solving Puzzle 4:</p>
+            <p>"You discover a door labeled 'Top Secret'. Behind it, you expect to find the treasure. Instead, there's another puzzle waiting for you. What could this prankster be up to?"</p>
+            <a href="puzzle5.html" class="button">Continue to Puzzle 5</a>
+        </div>
+        <div id="part5" style="display:none;">
+            <p>Part 5 of the story revealed after solving Puzzle 5:</p>
+            <p>"Behind the door, you find a series of numbers and a riddle. This prankster is really enjoying themselves. You solve it, but what comes next is even more surprising."</p>
+            <a href="puzzle6.html" class="button">Continue to Puzzle 6</a>
+        </div>
+        <div id="part6" style="display:none;">
+            <p>Part 6 of the story revealed after solving Puzzle 6:</p>
+            <p>"Finally, you reach the ultimate treasure room. You expect gold or jewels, but it's filled with... whoopee cushions! You burst out laughing as you realize the whole mystery was an elaborate prank by the house's former owner, a notorious prankster. You can't help but appreciate the humor in the situation."</p>
+            <a href="#" onclick="showCompleteStory()" class="button">Show Complete Story</a>
+        </div>
+        <div id="completeStory" style="display:none;">
+            
+            <p>In a spooky old house, whispers of a hidden treasure circulated among the shadows. Legend has it that this treasure was no ordinary find, but something that would make anyone laugh uncontrollably.</p>
+            <p>With the first clue solved, you find a map leading to the house's basement. It's dark and creepy down there, but you muster your courage to proceed. What could possibly go wrong?</p>
+            <p>In the basement, you find a series of comically exaggerated traps, like rubber chickens and fake spiders. Clearly, someone with a sense of humor set this up. But the biggest laugh is yet to come.</p>
+            <p>You discover a door labeled 'Top Secret'. Behind it, you expect to find the treasure. Instead, there's another puzzle waiting for you. What could this prankster be up to?</p>
+            <p>Behind the door, you find a series of numbers and a riddle. This prankster is really enjoying themselves. You solve it, but what comes next is even more surprising.</p>
+            <p>Finally, you reach the ultimate treasure room. You expect gold or jewels, but it's filled with... rubber ducks and barbie dolls! You burst out laughing as you realize the whole mystery was an elaborate prank by the house's former owner, a notorious prankster. You can't help but appreciate the humor in the situation.</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                const part = document.getElementById(hash);
+                if (part) {
+                    part.style.display = 'block';
+                }
+            }
+        });
+
+        function showCompleteStory() {
+            document.getElementById('part6').style.display = 'none';
+            document.getElementById('completeStory').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
